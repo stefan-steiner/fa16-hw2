@@ -7,22 +7,26 @@ class Person
   end
 
   def nickname
-    # YOUR IMPLEMENTATION HERE
-    'nickname'
+    @nickname = @name[0..3]
   end
 
   def birth_year
-    # YOUR IMPLEMENTATION HERE
-    1990
+    return 2016 - @age.to_i
   end
 
   def introduction
-    # YOUR IMPLEMENTATION HERE
-    'introduce'
+    # @introduction = "This is #{@name}, he is #{age} years old."
+    return "This is #{@name}, he is #{age} years old."
   end
 
   def fib_number
-    # YOUR IMPLMENTATION HERE
-    0
+    fib1 = 0
+    fib2 = 1
+    for i in 2..@age.to_i
+      help = fib1
+      fib1 = fib2
+      fib2 = fib2 + help
+    end
+    return fib2
   end
 end

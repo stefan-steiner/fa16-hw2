@@ -1,0 +1,14 @@
+img {
+	height: 100px;
+	width: auto;
+}
+
+h2 {
+	background: green;
+	color: white;
+}
+
+.fun_fact {
+	color: red;
+	font-weight: bold;
+}
